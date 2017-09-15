@@ -14,9 +14,9 @@
 				<h1 id="info">Welcome</h1>
 				<form class="form">
 					<button type="submit" id="test_id">测试工程</button>
-					<button type="submit" id="query_id">数据查询</button>
-					<button type="submit" id="update_id">数据更新</button>
-					<button type="submit" id="delete_id">数据删除</button>
+					<button type="submit" id="hdfs_id">HDFS管理工程</button>
+					<button type="submit" id="hbase_id">HBase管理工程</button>
+					<button type="submit" id="spark_id">Spark算法调用展示平台</button>
 				</form>
 			</div>
 
@@ -42,18 +42,18 @@
 			location.href = "/webtest";
 		});
 
-		$('#query_id').click(function(event) {
+		$('#hbase_id').click(function(event) {
 			event.preventDefault(); 
-			location.href = "query.html";
+			location.href = "/hbase";
 		});
 		
-		$('#update_id').click(function(event) {
+		$('#hdfs_id').click(function(event) {
 			event.preventDefault(); 
-			location.href = "update.html";
+			location.href = "/hdfs";
 		});
-		$('#delete_id').click(function(event) {
+		$('#spark_id').click(function(event) {
 			event.preventDefault(); 
-			location.href = "delete.html";
+			location.href = "/spark";
 		});
 	</script>
 
