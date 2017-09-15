@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>工程杂烩面</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="htmleaf-container">
+		<div class="wrapper">
+			<div class="container">
+				<h1 id="info">Welcome</h1>
+				<form class="form">
+					<button type="submit" id="test_id">测试工程</button>
+					<button type="submit" id="query_id">数据查询</button>
+					<button type="submit" id="update_id">数据更新</button>
+					<button type="submit" id="delete_id">数据删除</button>
+				</form>
+			</div>
+
+			<ul class="bg-bubbles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script>
+		$('#test_id').click(function(event) {
+			event.preventDefault(); 
+			location.href = "/webtest";
+		});
+
+		$('#query_id').click(function(event) {
+			event.preventDefault(); 
+			location.href = "query.html";
+		});
+		
+		$('#update_id').click(function(event) {
+			event.preventDefault(); 
+			location.href = "update.html";
+		});
+		$('#delete_id').click(function(event) {
+			event.preventDefault(); 
+			location.href = "delete.html";
+		});
+	</script>
+
+	<div style="text-align: center; margin: 50px 0; color: #000000">
+		<h1>工程杂烩面</h1>
+	</div>
+</body>
+</html>
