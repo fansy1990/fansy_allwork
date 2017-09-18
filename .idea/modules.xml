@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/fansy_allwork.iml" filepath="$PROJECT_DIR$/fansy_allwork.iml" />
       <module fileurl="file://$PROJECT_DIR$/main_menu/main_menu.iml" filepath="$PROJECT_DIR$/main_menu/main_menu.iml" />
       <module fileurl="file://$PROJECT_DIR$/webtest/webtest.iml" filepath="$PROJECT_DIR$/webtest/webtest.iml" />

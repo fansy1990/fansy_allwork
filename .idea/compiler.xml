@@ -31,8 +31,16 @@
         <processorPath useClasspath="true" />
         <module name="main_menu" />
       </profile>
+      <profile default="false" name="Annotation profile for common" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="common" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
       <module name="fansy_allwork" target="1.8" />
       <module name="main_menu" target="1.8" />
       <module name="webtest" target="1.8" />

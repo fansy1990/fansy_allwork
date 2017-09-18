@@ -8,6 +8,8 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.36" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.38" />
         </element>
       </element>
       <element id="directory" name="META-INF">

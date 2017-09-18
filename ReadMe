@@ -1,14 +1,17 @@
+20170915 小项目总结
 
-20170915 С��Ŀ�ܽ�
-
-����������
-IDEA14 �� JDK1.8��Tomcat7
+开发环境：
+IDEA14 ， JDK1.8，Tomcat7
 
 
-Ԥ��������Ŀ��
-1. HDFS ������
-2. HBase������
-3. �鼮4��������
-4. Spark�㷨ͳһ����ƽ̨��
-5. ������Ŀ+easyRec �Ƽ�ϵͳ��
-6. �ı��ھ���Ŀ��
+预计容纳项目：
+1. HDFS 操作；
+2. HBase操作；
+3. 书籍4个案例；
+4. Spark算法统一调用平台；
+5. 电商项目+easyRec 推荐系统；
+6. 文本挖掘项目；
+
+
+Common工程：
+1. 包含 Log4J、MySQL-connector、fastJSON、junit；
