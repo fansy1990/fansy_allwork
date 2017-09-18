@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/fansy_allwork.iml" filepath="$PROJECT_DIR$/fansy_allwork.iml" />
       <module fileurl="file://$PROJECT_DIR$/main_menu/main_menu.iml" filepath="$PROJECT_DIR$/main_menu/main_menu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_hdfs_hbase/web_hdfs_hbase.iml" filepath="$PROJECT_DIR$/web_hdfs_hbase/web_hdfs_hbase.iml" />
       <module fileurl="file://$PROJECT_DIR$/webtest/webtest.iml" filepath="$PROJECT_DIR$/webtest/webtest.iml" />
     </modules>
   </component>

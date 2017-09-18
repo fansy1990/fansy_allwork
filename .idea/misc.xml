@@ -5,6 +5,7 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/main_menu" />
+    <file type="web" url="file://$PROJECT_DIR$/web_hdfs_hbase" />
     <file type="web" url="file://$PROJECT_DIR$/webtest" />
   </component>
   <component name="MavenProjectsManager">

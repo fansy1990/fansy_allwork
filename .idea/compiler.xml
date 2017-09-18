@@ -38,11 +38,19 @@
         <processorPath useClasspath="true" />
         <module name="common" />
       </profile>
+      <profile default="false" name="Annotation profile for web_hdfs_hbase" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="web_hdfs_hbase" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common" target="1.8" />
       <module name="fansy_allwork" target="1.8" />
       <module name="main_menu" target="1.8" />
+      <module name="web_hdfs_hbase" target="1.8" />
       <module name="webtest" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -12,6 +12,7 @@
         <module>main_menu</module>
         <module>webtest</module>
         <module>common</module>
+        <module>web_hdfs_hbase</module>
     </modules>
 
     <properties>

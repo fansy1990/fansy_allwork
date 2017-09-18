@@ -1,0 +1,37 @@
+[{
+	"id":1,
+	"text":"HBase表管理系统",
+	"attributes":{
+			"folder":"1"
+	},
+	"children":[{
+		"id":11,
+		"text":"表管理",
+		"state":"open",
+		"attributes":{
+			"folder":"1"
+		},
+		"children":[{
+			"id":111,
+			"text":"Table管理",
+			"attributes":{
+				"folder":"0",
+				"url":"hbaseCommand/list.jsp"
+			}
+		},{
+			"id":113,
+			"text":"Table数据管理",
+			"attributes":{
+				"folder":"0",
+				"url":"hbaseCommand/data_retrieve.jsp"
+			}
+		}]
+	},{
+		"id":15,
+		"text":"简介",
+		"attributes":{
+			"folder":"0",
+			"url":"hbaseCommand/about.html"
+		}
+	}]
+}]
