@@ -136,14 +136,9 @@
           <element id="library" level="project" name="Maven: org.mortbay.jetty:jetty:6.1.26" />
           <element id="library" level="project" name="Maven: org.mortbay.jetty:jetty-util:6.1.26" />
           <element id="library" level="project" name="Maven: org.mortbay.jetty:jetty-sslengine:6.1.26" />
-          <element id="library" level="project" name="Maven: org.mortbay.jetty:jsp-2.1:6.1.14" />
-          <element id="library" level="project" name="Maven: org.mortbay.jetty:jsp-api-2.1:6.1.14" />
-          <element id="library" level="project" name="Maven: org.mortbay.jetty:servlet-api-2.5:6.1.14" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.9.13" />
-          <element id="library" level="project" name="Maven: tomcat:jasper-compiler:5.5.23" />
-          <element id="library" level="project" name="Maven: tomcat:jasper-runtime:5.5.23" />
           <element id="library" level="project" name="Maven: org.jamon:jamon-runtime:2.3.1" />
           <element id="library" level="project" name="Maven: io.netty:netty-all:4.0.23.Final" />
           <element id="library" level="project" name="Maven: org.apache.htrace:htrace-core:3.1.0-incubating" />
