@@ -9,7 +9,7 @@ import java.util.Map;
  * Created by fansy on 2017/9/18.
  */
 public class HadoopUtil {
-    private static final String hadoop_properties ="/hadoop.properties";
+    private static final String hadoop_properties ="hadoop.properties";
     private static Configuration conf = null;
     public static Configuration getConf() {
         if (conf == null) {
