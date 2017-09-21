@@ -89,6 +89,21 @@ function update_project(title_,tab_title,data_page,data){
 function login(){
 	$('#login_ff').submit(); 
 }
+// 首页
+function main_menu(){
+	$.messager.confirm('提示', '您想要返回首页吗？', function(r){
+		if (r){
+		    // 退出操作;
+			var result = callByAJax('user/hdfsUser_logout.action',{});
+			if("true" == result.flag){
+//				$.messager.alert('信息','文件下载成功!','info');
+				window.location.href="/main_menu";
+			}else if("false" == result.flag){
+				$.messager.alert('信息',result.msg,'info');
+			}
+		}
+	});
+}
 // 注销
 function logout(){
 	$.messager.confirm('提示', '您想要退出该系统吗？', function(r){
@@ -103,8 +118,6 @@ function logout(){
 			}
 		}
 	});
-
-
 }
 // 注册
 function register(){

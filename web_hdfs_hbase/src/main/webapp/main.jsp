@@ -50,6 +50,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</tr>
 		</table>
 			<div id="mm" style="width:150px; ">
+				<div data-options="iconCls:'icon-man'" onclick="main_menu()">首页</div>
 				<div data-options="iconCls:'icon-man'" onclick="logout()">注销</div>
 			</div>
 	</div>
