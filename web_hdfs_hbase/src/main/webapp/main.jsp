@@ -76,7 +76,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 				<div title="HBase" style="padding:10px;">
 					<a onclick="update_project('冠字号查询系统','简介','identifyRMB/about.html','json/identifyRMB.json')"
-						class="easyui-linkbutton">冠字号查询系统：未完成</a>
+						class="easyui-linkbutton">冠字号查询系统</a>
 				</div>
 			</div>
 			<div title="推荐系统" data-options="selected:false"
