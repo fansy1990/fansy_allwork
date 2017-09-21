@@ -26,6 +26,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div style="padding-left: 100px; padding-top: 15px">
 		<div style="margin:20px 0;">
 		<table style="font-size: 12px;text-align: left;">
+            <tr>
+                <td>参数：</td>
+                <td>
+                    <select id= "" class="easyui-combobox" name="state" style="width:100px;">
+                        <option value="uid" selected="selected">用户数据</option>
+                        <option value="in_out" >交易数据</option>
+                    </select>
+                    <a id="change_parameters_btn" onclick="change_parameters()"
+                       class="easyui-linkbutton" data-options="iconCls:'icon-reload'">使用</a>
+                </td>
+            </tr>
 		<tr><td>
 			HDFS文件路径：
 			</td>
