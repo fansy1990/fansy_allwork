@@ -62,11 +62,22 @@ $(function(){
  * @param title_
  * @param data
  */
-function update_project(title_,data){
+function update_project(title_,tab_title,data_page,data){
 //	更新中间显示
 	$('#centerTitleId').panel({ title: title_ });
-	document.getElementById("project_about_id").innerHTML=title_;
+//	$('#centerTabPage').panel({ title: tab_title });
+//	$('#centerTabPage').panel({ href: data_page });
+//	document.getElementById("project_about_id").innerHTML=title_;
 	removePanel();
+
+	layout_center_addTabFun({
+            title : tab_title,
+            closable : false,
+            iconCls : '',
+            href : data_page
+    });
+
+
 	// 更新east 树导航
 	$('#eastTree').tree({'url':data});
 			
@@ -179,13 +190,13 @@ function removePanel(){
 //    }
     
 	$('#centerTab ul.tabs li').each(function(index, v) {
-	    if(index!=0){
+//	    if(index!=0){// 第一个也移除
 	    	
 	    	var elTitle = $('.tabs-title', v);
 		    var title = elTitle.html();
 //	    	console.info('Tab: ' + title + ' ,index: ' + index+' closing');
 	    	$("#centerTab").tabs("close", title);
-	    }
+//	    }
 	});
 }
 

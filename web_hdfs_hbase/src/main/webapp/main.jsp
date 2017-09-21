@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
 <base href="<%=basePath%>">
 
-<title>Hadoop Ecosystem</title>
+<title>工程合集</title>
 
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
@@ -32,7 +32,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div data-options="region:'north'" style="height:70px;padding-top: 5px">
 		<table align="center" border="0" width="100%">
 			<tr style="font-size: 20px;text-align: center;font-weight: bold;"><td>
-				Hadoop Ecosystem</td>
+				工程合集</td>
 		</tr>
 		<!-- <p style="text-align: right;padding-right: 180px;font-size: 13px;padding-top: 0px"> -->
 		<tr style="font-size: 13px;text-align: right;">
@@ -64,28 +64,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		style="width:100px;">
 		<div class="easyui-accordion" data-options="fit:true,border:false">
 			<div title="HDFS" style="padding:10px;selected:true">
-				<a onclick="update_project('HDFS文件管理','json/hdfsManager.json')"
+				<a onclick="update_project('HDFS文件管理','简介','hdfsManager/about.html','json/hdfsManager.json')"
 					class="easyui-linkbutton">HDFS文件管理系统</a>
 			</div>
 			<div title="HBase" data-options="selected:false"
 				style="padding:10px;">
 				<div title="HBase" style="padding:10px;">
-					<a onclick="update_project('HBase表管理系统','json/hbase.json')"
+					<a onclick="update_project('HBase表管理系统','简介','hbaseCommand/about.html','json/hbase.json')"
 						class="easyui-linkbutton">HBase表管理系统</a>
 				</div>
 				<div title="HBase" style="padding:10px;">
-					<a onclick="update_project('冠字号查询系统','json/identifyRMB.json')"
+					<a onclick="update_project('冠字号查询系统','简介','identifyRMB/about.html','json/identifyRMB.json')"
 						class="easyui-linkbutton">冠字号查询系统：未完成</a>
 				</div>
 			</div>
 			<div title="推荐系统" data-options="selected:false"
 				style="padding:10px;">
 				<div title="movie" style="padding:10px;">
-					<a onclick="update_project('电影推荐系统','json/movieRecommend.json')"
+					<a onclick="update_project('电影推荐系统','简介','movieRecommend/about.html','json/movieRecommend.json')"
 						class="easyui-linkbutton">电影推荐系统</a>
 				</div>
 				<div title="blog" style="padding:10px;">
-					<a onclick="update_project('博客推荐系统：未完成','json/tree_data1.json')"
+					<a onclick="update_project('博客推荐系统：未完成','简介','tobecontinued.html','json/tree_data1.json')"
 						class="easyui-linkbutton">博客推荐系统</a>
 				</div>
 			</div>
@@ -96,7 +96,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		data-options="region:'center',title:'电影推荐系统',iconCls:'icon-ok'">
 		<div id="centerTab" class="easyui-tabs"
 			data-options="fit:true,border:false,plain:true">
-			<div title="HE简介" data-options="href:'about.jsp'"
+			<div id="centerTabPage"  data-options="title:'简介',href:'movieRecommend/about.html'"
 				style="padding:10px"></div>
 
 		</div>
