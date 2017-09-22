@@ -29,7 +29,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <tr>
                 <td>参数：</td>
                 <td>
-                    <select id= "" class="easyui-combobox" name="state" style="width:100px;">
+                    <select id= "change_parameters_values" class="easyui-combobox" name="state" style="width:100px;">
                         <option value="uid" selected="selected">用户数据</option>
                         <option value="in_out" >交易数据</option>
                     </select>

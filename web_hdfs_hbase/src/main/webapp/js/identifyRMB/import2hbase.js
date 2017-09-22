@@ -1,8 +1,4 @@
 
-
-
-
-
 function import2hbase(){
 	console.info("import to hbase");
 	// TODO 检查HDFS数据路径是否存在，如果不存在给出提示，并返回
@@ -90,7 +86,28 @@ function import2hbase(){
 	  }
 }
 
-function init_import2hbase(){
-	console.info("init import to hbase");
-	
-}
+/**
+* 根据不同的选项，初始化参数
+*/
+function change_parameters(){
+ 	console.info("change parameters...");
+ 	var change_parameters_value = $('#change_parameters_values').combobox('getValue');
+ 	if(change_parameters_value == "uid"){
+         $('#import2hbase_input').textbox('setValue',"/user/root/uid_details.txt");
+         $('#import2hbase_table').textbox('setValue',"user");
+         $('#import2hbase_columnDescription').textbox('setValue',"rk,info:name,info:birthday,info:gender,info:address,info:phone,info:bank");
+
+ 	}else{
+         $('#import2hbase_input').textbox('setValue',"/user/root/in_out_details.txt");
+         $('#import2hbase_table').textbox('setValue',"records");
+         $('#import2hbase_columnDescription').textbox('setValue',"rk,info:exist,ts,info:bank,info:uid");
+ 	}
+ }
+
+ function init_import2hbase(){
+ 	console.info("init import to hbase");
+    $('#import2hbase_input').textbox('setValue',"");
+    $('#import2hbase_table').textbox('setValue',"");
+    $('#import2hbase_columnDescription').textbox('setValue',"");
+
+ }

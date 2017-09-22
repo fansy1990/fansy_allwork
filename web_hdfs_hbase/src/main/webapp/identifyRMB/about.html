@@ -19,7 +19,14 @@
 		<ul>
 			<li>数据加载： 指定HDFS路径、指定HBase表，指定原始数据列描述字符串
 			（必须包含rk，也就是rowkey；时间列ts可包含可不包含，如果包含，还需要指定时间列格式），
-			需指定原始数据字段分隔符；</li>
+			需指定原始数据字段分隔符；
+                <br>
+            数据加载前，先在HBase中建立表：<br>
+                1）create 'records',{NAME=>'info',VERSIONS=>1000},SPLITS =>['AAAM9999','AAAZ9999','AABM9999']；
+                <br>
+                2）create 'user',{NAME=>'info'},SPLITS =>['4113281990XXXX0000','4113281991XXXX0000','4113281992XXXX0000']
+
+            </li>
 				
 			<br>
 			<li>冠字号查询&存取款</li>
