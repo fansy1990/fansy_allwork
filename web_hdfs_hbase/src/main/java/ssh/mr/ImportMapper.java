@@ -18,6 +18,9 @@ import org.apache.hadoop.mapreduce.Mapper;
  *
  */
 public class ImportMapper extends Mapper<LongWritable, Text, ImmutableBytesWritable, Put>{
+    public static final String SPLITTER = "SPLITTER";
+    public static final String COLSFAMILY = "COLSFAMILY";
+    public static final String DATEFORMAT = "DATEFORMAT";
 	private static final String COMMA = ",";
 	private static final String COLON=":";
 	private String splitter = null;
@@ -37,12 +40,12 @@ public class ImportMapper extends Mapper<LongWritable, Text, ImmutableBytesWrita
 	@Override
 	protected void setup(Context context)
 			throws IOException, InterruptedException {
-		splitter = context.getConfiguration().get(ImportToHBase.SPLITTER,",");
-		String colsStr = context.getConfiguration().get(ImportToHBase.COLSFAMILY,null);
+		splitter = context.getConfiguration().get(SPLITTER,",");
+		String colsStr = context.getConfiguration().get(COLSFAMILY,null);
 		
-		sf = context.getConfiguration().get(ImportToHBase.DATEFORMAT,null)==null
+		sf = context.getConfiguration().get(DATEFORMAT,null)==null
 				? new SimpleDateFormat("yyyy-MM-dd HH:mm")
-						:new SimpleDateFormat(context.getConfiguration().get(ImportToHBase.DATEFORMAT));
+						:new SimpleDateFormat(context.getConfiguration().get(DATEFORMAT));
 		
 		String[] cols = colsStr.split(COMMA, -1);
 		

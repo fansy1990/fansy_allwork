@@ -45,10 +45,17 @@
         <processorPath useClasspath="true" />
         <module name="web_hdfs_hbase" />
       </profile>
+      <profile default="false" name="Annotation profile for hadoop_algorithm" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common" target="1.8" />
       <module name="fansy_allwork" target="1.8" />
+      <module name="hadoop_algorithm" target="1.8" />
       <module name="main_menu" target="1.8" />
       <module name="web_hdfs_hbase" target="1.8" />
       <module name="webtest" target="1.8" />

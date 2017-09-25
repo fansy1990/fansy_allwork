@@ -43,9 +43,10 @@ public class JarUtil {
      * @return
      */
     public static String jar(Class<?> cls) {
+     //   System.out.println(cls.getClassLoader().getResource("/").getFile());
         String outputJar = cls.getClassLoader().getResource("/").getFile()
                 .replace("WEB-INF/classes/", "")
-                + "hdfs2hbase.jar";
+                + "algorithm.jar";
         return jar(cls,outputJar);
     }
 

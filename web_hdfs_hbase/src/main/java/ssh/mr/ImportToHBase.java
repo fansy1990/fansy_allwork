@@ -12,6 +12,7 @@ import org.apache.hadoop.util.Tool;
 
 import ssh.util.HUtils;
 
+import static ssh.mr.ImportMapper.*;
 /**
  * Job Driver驱动类
  * 
@@ -19,9 +20,7 @@ import ssh.util.HUtils;
  * 
  */
 public class ImportToHBase extends Configured implements Tool {
-	public static final String SPLITTER = "SPLITTER";
-	public static final String COLSFAMILY = "COLSFAMILY";
-	public static final String DATEFORMAT = "DATEFORMAT";
+
 
 	@Override
 	public int run(String[] args) throws Exception {
